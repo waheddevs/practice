@@ -4,10 +4,10 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 */
 
 // Masalaning yechimi:
-function countLetter(a, shaxzoda) {
+function countLetter(b, abduvohid) {
   let count = 0;
-  for (let letter of shaxzoda) {
-    if (letter === a) {
+  for (let letter of abduvohid) {
+    if (letter === b) {
       count++;
     }
   }
@@ -15,5 +15,5 @@ function countLetter(a, shaxzoda) {
 return count;
 }
 
-console.log(countLetter("a", "shaxzoda"));
-console.log(countLetter("b", "abduvohid"));
+console.log(countLetter("j", "jasur"));
+console.log(countLetter("d", "abduvohid"));
