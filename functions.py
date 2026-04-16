@@ -1,18 +1,19 @@
 ''' FUNCTIONS
 (1) DEFINE vs CALL
 (2) PARAMETER vs ARGUMENT
-(3) KEYWORD vs DEFUALT ARGUMENT
+(3) KEYWORD vs DEFAULT ARGUMENT
 (4) SCOPE
 '''
 
-print('====== DEFINE vs CALL ======')
+
+print('====== DEFINE(parameter) vs CALL(argument) ======')
 # build in function > print() type()
 # Function - reusable block of code (malum bir mantiqni ishga tushuruvchi kod blok)
 # Instead of block {} in JAVA, we use indentation in Python to define a function (:)
 # def - function definition
 
 
-# DEFINE - build
+# DEFINE - build (parameter)
 
 
 def great(a):            # void function, chunki return yo'q
@@ -23,7 +24,7 @@ def greating(b):         # return function, chunki return bor
     return f"Hi, {b}"
 
 
-# CALL -execute
+# CALL -execute function (argument)
 great('ARNOLD')
 
 '''
@@ -37,13 +38,4 @@ result2 = greating('MARTIN')
 print("the result2:", result2)
 
 
-print('====== PARAMETER vs ARGUMENT ======')
-# DEFINE - parameter (a, b, c)
-
-
-def great(a):            # void function, chunki return yo'q
-    print(f"How do you do, {a}")
-
-
-# CALL -argument ('ARNOLD')
-great('ARNOLD')
+print('====== KEYWORD vs DEFAULT ARGUMENT ======')
