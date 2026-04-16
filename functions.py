@@ -59,4 +59,29 @@ result4 = give_great('MARTIN')
 print("the result4:", result4)
 
 
-print('====== KEYWORD vs DEFAULT ARGUMENT ======')
+print('====== SCOPE ======')
+b = 100  # 3
+
+
+# DEFINE
+def calculate(a, b):  # 2
+    c = a * b  # 1
+    print("the c value:", c)
+
+
+# CALL
+calculate(5, 10)
+
+# SCOPE larning priority tushunchasi mavjud. Bunga ko'ra, birinchi bo'lib (define) ya'ni blockimizni ichidan izlaydi, agar topilmasa, parameterdan izlaydi. Agar topilmasa, tashqridan oladi
+
+
+# DEFINE
+def calculate(a):  # 2
+    c = a * b  # 1
+    print("the c value:", c)
+
+
+# CALL
+calculate(5)
+
+# SCOPE larning priority tushunchasi mavjud. Hozir tashqaridan oldi sababi parametr va block ichida b yo'q
