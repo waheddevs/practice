@@ -39,3 +39,24 @@ print("the result2:", result2)
 
 
 print('====== KEYWORD vs DEFAULT ARGUMENT ======')
+
+# DEFINE
+
+
+# default argument, agar age ni argument sifatida bermasak, default qiymat 25 bo'ladi
+def give_great(name, age=25):
+    print('give_great is executed')
+    return f'Hi, {name}, you are {age} years old!'
+
+
+# CALL
+result3 = give_great('ARNOLD', 76)
+# result3 = give_great(name='ARNOLD', age=76)   # KEYWORD ARGUMENT / biz bundan mantig'imizni yanada aniqroqifodalash uchun ishlatamiz
+print("the result3:", result3)
+
+# age argumentini bermadik, shuning uchun default qiymat 25 bo'ladi
+result4 = give_great('MARTIN')
+print("the result4:", result4)
+
+
+print('====== KEYWORD vs DEFAULT ARGUMENT ======')
