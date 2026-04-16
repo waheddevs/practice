@@ -11,6 +11,7 @@ print('====== DEFINE vs CALL ======')
 # Instead of block {} in JAVA, we use indentation in Python to define a function (:)
 # def - function definition
 
+
 # DEFINE - build
 
 
@@ -34,3 +35,15 @@ print("the result1:", result1)
 
 result2 = greating('MARTIN')
 print("the result2:", result2)
+
+
+print('====== PARAMETER vs ARGUMENT ======')
+# DEFINE - parameter (a, b, c)
+
+
+def great(a):            # void function, chunki return yo'q
+    print(f"How do you do, {a}")
+
+
+# CALL -argument ('ARNOLD')
+great('ARNOLD')
