@@ -37,3 +37,20 @@ print(course)  # course o'zgarmadi, chunki yuqoridagi metodlar boshlang'ich qiym
 # course = course.replace("Fullstack", "Masterclass")
 
 print('====== boolean ======')
+# functions (always used): type() input() bool() int() str()
+y = input("Give your value for y: ")
+print("y:", y)
+
+result = y.isnumeric()  # method
+print(f"the input value is numertic: {result}")
+
+# TRUTHY vs FALSY value
+# TRUTHY: True 100 -100 "MIT"
+# FALSY: False, 0, '', None
+
+# or - operatori ichida bittagina truthy qiymat bo'lsa qancha falsy qiymat bo'lsa ham natija truthy bo'ladi, agar hammasi falsy bo'lsa natija falsy bo'ladi
+test_falsy = "" or False or None or 0
+print("The test_falsy:", bool(test_falsy))
+
+test_truthy = "MIT"
+print("The test_truthy:", bool(test_truthy))
