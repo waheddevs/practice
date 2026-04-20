@@ -40,6 +40,10 @@ except KeyError as err:
     print('No origin state property found:', err)
 except AttributeError as err:
     print('No origin state property found:', err)
+except (KeyError, AttributeError) as err:
+    print('Error:', err)
+except Exception as err:
+    print('General error:', err)
 else:
     print('Executed succesfully without error')
 finally:
