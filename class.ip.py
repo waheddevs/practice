@@ -42,6 +42,9 @@ class Dog(Animal):  # Child
     def protect(self):
         print('Yes, I can protect you!')
 
+    def make_voice(self):
+        print(f'The {self.name} says: {self.voice}')
+
 
 class Cat(Animal):  # Child
     # state
@@ -97,3 +100,27 @@ print(Dog.descripotion)
 
 print(dog.voice, fish.voice)
 print('status:', dog._status)
+
+
+print('==== POLYMORPHISM ====')
+# Bir narsaning bir necha xil shaklga ega bo'lishi Polymorphism deyiladi
+
+# Child avval o'zidagi methoddan foydalanadi, agar unda method bo'masa parent dan oladi. bu tushuncha polymorphism deyiladi
+
+dog.make_voice()
+fish.make_voice()
+
+print('--------')
+# fish > Fish > Animal > object
+
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance('MIT', object)
+result = a and b and c and d
+print(f'the result: {result}')
+
+# fish > Fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print('data:', data1, data2)
