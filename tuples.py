@@ -65,3 +65,13 @@ print('-------')
 calculate(5, 7)
 
 # Qachonki argumentlarimiz soni noaniq bo'lsa, Tuple ga wrap qilib argumentlarni yoyishda ishlatamiz
+
+
+# **kwargs > dictionary lar orqali hosil bo'lgan uslubiyat
+def introduce(*args, **keywargs):
+    pass
+
+
+# call
+introduce(name='Justin', age=28)
+introduce(name='Shawn', age=30, single=True)
