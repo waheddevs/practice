@@ -75,3 +75,28 @@ def introduce(*args, **keywargs):
 # call
 introduce(name='Justin', age=28)
 introduce(name='Shawn', age=30, single=True)
+
+
+# Bir vaqtni o'zida ikkala usuldan ham foydalanish mumkin:
+
+def greeting(*args, **kwargs):
+    print('*args >', args)
+    print('**kwargs >', kwargs)
+
+
+# call
+greeting('hi', True, 10, name='John', age=22)
+
+
+print('===== zip =====')
+# Maxsus object hisoblanadi
+
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+print('zipped:', zipped)
+
+# argumentlarni ko'ra olishimiz uchun biz uni listga joylashimiz kerak
+result = list(zipped)
+print(f'the result: {result}')
