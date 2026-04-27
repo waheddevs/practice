@@ -5,6 +5,34 @@ MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 
 
 // Masalaning yechimi:
+function getReverse(abc) {
+  let result = ''
+  for (let i = abc.length - 1; i >= 0; i--) {
+    result += abc[i]
+  }
+  return result
+}
+
+console.log(getReverse('ARNOLD'))
+console.log(getReverse('MARTIN'))
+
+
+
+
+
+//==============================================================================================================================
+
+
+
+
+
+/* D-TASK
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+
+/*
+// Masalaning yechimi:
 function getHighestIndex(array) {
     let biggestOne = array[0];
 
@@ -23,7 +51,7 @@ function getHighestIndex(array) {
 
 let result = getHighestIndex([3, 19, 9, 19, 4]);
 console.log(result);
-
+*/
 
 
 
