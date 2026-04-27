@@ -22,10 +22,6 @@ console.log(getReverse('MARTIN'))
 
 //==============================================================================================================================
 
-
-
-
-
 /* D-TASK
 Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
@@ -55,6 +51,8 @@ console.log(result);
 
 
 
+
+//==============================================================================================================================
 
 /* C-TASK:
 Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
