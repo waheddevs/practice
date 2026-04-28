@@ -39,3 +39,21 @@ cars = [
 ]
 list_cars = [car[0] for car in cars if car[1] > 80]    # c version
 print('list_cars', list_cars)
+
+
+print('===== set and dictionary comp =====')
+numbs = [1, 5, 4, 20, 4, 5, 1, 4]
+set_numbs = {*numbs}              # a version
+print('set_numbs:', set_numbs)
+# Bu amalimiz arraydagi bir xil value larni bitta qilib olishda ishlatiladi. Agar 2 ta bir value bo'lsa ulardan faqat bittasini oladi
+
+dict_people = {person[0]: person[1] for person in people}    # b version
+print('dict_people', dict_people)
+
+dict_people2 = {person[0]: person[1]
+                for person in people if person[1] > 20}      # c version
+print('dict_people2', dict_people2)
+
+
+# (expression> for item in iterable) generic
+# generic typelardan katta hajmdagi malumotlar bilan ishlaganda foydalanimiz. Generic type lar ko'p ishlatilmaganligi uchun bunga chuqur to'xtalmaymiz
