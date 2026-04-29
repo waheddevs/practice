@@ -43,10 +43,10 @@ print('===== Package Manager & External package =====')
 '''
 # External Package > https://pypi.org/
 
-# with Image.open('material\photo_2026-01-25_18-19-04.jpg') as img_obj:
-#     resized_img = img_obj.resize((200, 200))
-#     resized_img.show()
-#     resized_img.save('material\sample.png')
+with Image.open('material\photo_2026-01-25_18-19-04.jpg') as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save('material\sample.png')
 
 
 print('===== Debugging =====')
