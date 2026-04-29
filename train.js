@@ -1,9 +1,38 @@
+/* F-TASK
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+*/
+
+
+// Masalaning yechimi:
+function findDoublers(i) {
+    const harf = new Set();
+    for (let char of i) {
+        if (harf.has(char)) {
+            return true;
+        }
+        harf.add(char);
+    }
+
+    return false;
+}
+
+console.log(findDoublers("alla"));
+console.log(findDoublers("yalla"));
+console.log(findDoublers("olma"));
+console.log(findDoublers("banan"));
+
+
+
+
+//==============================================================================================================================
+
 /* E-TASK
 Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 */
 
-
+/*
 // Masalaning yechimi:
 function getReverse(abc) {
   let result = ''
@@ -15,7 +44,7 @@ function getReverse(abc) {
 
 console.log(getReverse('ARNOLD'))
 console.log(getReverse('MARTIN'))
-
+*/
 
 
 
