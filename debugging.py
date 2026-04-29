@@ -1,7 +1,7 @@
 ''' Packages & Debugging
 (1) Python Packages & Core package
-(2) Package MAnager & External package
-(3) DEbugging
+(2) Package Manager & External package
+(3) Debugging
 '''
 
 from PIL import Image
@@ -34,7 +34,7 @@ with open('material/message.txt', 'r') as your_file:
 print('DONE')
 
 
-print('===== Package MAnager & External package =====')
+print('===== Package Manager & External package =====')
 ''' Package Manager > pip
     Python > pip pipenv
     NodeJS > npm yarn
@@ -47,3 +47,6 @@ with Image.open('material\photo_2026-01-25_18-19-04.jpg') as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save('material\sample.png')
+
+
+print('===== Debugging =====')
