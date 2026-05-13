@@ -4,7 +4,32 @@ Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqam
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 */
 
+// Masalaning yechimi:
+function reverseSentence(text) {
 
+    const words = text.split(" ");
+    const reversedWords = words.map(word => {
+        return word.split("").reverse().join("");
+    });
+
+    return reversedWords.join(" ");
+}
+
+console.log(reverseSentence("Aldaysan-ku Sardor"));
+console.log(reverseSentence("Nimo'lyapti?"));
+
+
+
+
+//==============================================================================================================================
+
+/* J-TASK (NodeJS)
+
+Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+*/
+
+/*
 // Masalaning yechimi:
 function majorityElement(numbers) {
   const countMap = {};
@@ -21,7 +46,7 @@ function majorityElement(numbers) {
 }
 
 console.log(majorityElement([12, 2, 8, 5, 8, 16, 8, 3]));
-
+*/
 
 
 
