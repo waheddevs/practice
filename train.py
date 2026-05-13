@@ -1,3 +1,27 @@
+''' K-TASK (PYTHON)
+
+Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
+MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
+
+'''
+# Masalaning yechimi:
+
+
+def find_longest(text):
+
+    words = text.split()
+    longest = ""
+
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+
+    return longest
+
+
+print(find_longest('I am Arnold'))
+print(find_longest('This is an Apple'))
+
 ''' I-TASK (PYTHON)
 
 Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
@@ -6,7 +30,7 @@ MASALAN: get_digits("m14i1t") return qiladi "141"
 '''
 # Masalaning yechimi:
 
-
+'''
 def get_digits(son):
 
     result = ""
@@ -18,6 +42,7 @@ def get_digits(son):
 
 print(get_digits("m14i1t"))
 print(get_digits("a1b2c3"))
+'''
 
 
 ''' G-TASK (PYTHON)
