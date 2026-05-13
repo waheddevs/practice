@@ -1,7 +1,7 @@
-/* J-TASK (NodeJS)
+/* L-TASK (NodeJS)
 
-Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
-MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 */
 
 // Masalaning yechimi:
