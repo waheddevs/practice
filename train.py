@@ -1,3 +1,24 @@
+''' O-TASK (PYTHON)
+
+Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va List ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
+MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
+
+'''
+# Masalaning yechimi:
+
+
+def calculate_summary(arr):
+    total = 0
+    for item in arr:
+        if type(item) in (int, float):
+            total += item
+    return total
+
+
+print(calculate_summary([5, "3", {"son": 4}, True, 6]))
+print(calculate_summary([1.5, 2, "MIT", None, 3.5]))
+
+
 ''' K-TASK (PYTHON)
 
 Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
@@ -6,7 +27,7 @@ MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
 '''
 # Masalaning yechimi:
 
-
+'''
 def find_longest(text):
 
     words = text.split()
@@ -21,6 +42,8 @@ def find_longest(text):
 
 print(find_longest('I am Arnold'))
 print(find_longest('This is an Apple'))
+'''
+
 
 ''' I-TASK (PYTHON)
 
